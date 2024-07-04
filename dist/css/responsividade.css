@@ -1,0 +1,317 @@
+@media (min-width: 1024px) {
+    .top-fixed #header .header, .top-fixed #nav-store {
+        position: fixed;
+        width: 100%;
+        opacity: 0;
+        transition: all .3s ease 0s
+    }
+
+    .top-fixed #header {
+        height: 250px
+    }
+
+    .top-fixed #header .header {
+        z-index: 100;
+        left: 0;
+        top: -80px;
+        background: #0e542d
+    }
+
+    .top-fixed #header .logo img {
+        height: 140px;
+        margin-top: -20px
+    }
+
+    .top-fixed #header .search {
+        padding: 19px 50px 19px 84px
+    }
+
+    .top-fixed #header .utilities .mini-cart, .top-fixed #header .utilities .nav-lojas, .top-fixed #header .utilities .nav-user {
+        padding: 19px 0
+    }
+
+    .show-top-fixed #header .header {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@media (max-width: 1024px) {
+    #header .utilities .nav-lojas .txt, #header .utilities .nav-user .txt {
+        font-size: 0
+    }
+
+    #header .logo .logo-desktop {
+        display: block
+    }
+
+    #header .logo .logo-mobile {
+        display: none
+    }
+
+    #header .utilities {
+        width: 200px
+    }
+
+    #header .utilities .nav-lojas .btn-link {
+        margin: 11px 0 0
+    }
+
+    #header .utilities .nav-user .icon-user {
+        right: 0
+    }
+
+    #header .search {
+        width: calc(100% - 350px);
+        padding: 32px 30px
+    }
+}
+
+@media (max-width: 480px) {
+    #header .logo .logo-desktop {
+        display: none
+    }
+
+    #header .logo .logo-mobile {
+        display: block
+    }
+
+    #header .header {
+        height: 70px
+    }
+
+    #header .header .wrap {
+        position: relative;
+        padding: 0 10px
+    }
+
+    #header .logo {
+        width: auto;
+        position: relative;
+        left: 27%;
+        margin-top: 20px;
+        transform: translateX(-50%)
+    }
+
+    #header .logo img {
+        height: 20.267vw;
+        width: auto
+    }
+
+    #header .logo img.logo-mobile {
+        width: 170px;
+        height: 30px
+    }
+
+    #header .utilities {
+        width: auto
+    }
+
+    #header .utilities .nav-lojas {
+        display: block;
+        padding: 14px 0
+    }
+
+    #header .utilities .nav-lojas .icon-nossas-lojas {
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-left: 10px
+    }
+
+    #header .utilities .nav-user {
+        padding: 0;
+        position: initial;
+        margin: 10px 0 0 10px
+    }
+
+    #header .utilities .nav-user .drop {
+        width: 94%;
+        left: 3%
+    }
+
+    #header .utilities .nav-user .drop ul {
+        width: 100%;
+        border-radius: 4px
+    }
+
+    #header .utilities .nav-user .drop ul li:first-child a:before {
+        right: 20.5vw
+    }
+
+    #header .utilities .nav-user .icon-user {
+        width: 20px;
+        height: 30px;
+        left: 50%;
+        right: auto;
+        margin: -16px 0 0 -15px
+    }
+
+    #header .utilities .nav-user .btn-link {
+        padding: 0;
+        width: 50px;
+        height: 50px
+    }
+
+    #header .utilities .nav-user .btn-link .txt {
+        display: none
+    }
+
+    #header .utilities .mini-cart {
+        padding: 0;
+        margin-top: 9px
+    }
+
+    #header .utilities .mini-cart .open-minicart {
+        padding: 9px 0 10px;
+        width: auto
+    }
+
+    #header .utilities .mini-cart .open-minicart .s-icon {
+        width: 25px;
+        height: 32px
+    }
+
+    #header .utilities .mini-cart .total-qty {
+        left: 2px;
+        line-height: 5.867vw;
+        width: 5.867vw;
+        font-size: 2.933vw
+    }
+
+    #header .search {
+        float: none;
+        clear: both;
+        box-sizing: border-box;
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 94%;
+        left: 3%;
+        padding: 2.133vw;
+        background: #fff;
+        margin-top: -2.667vw;
+        border-radius: 6px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .2)
+    }
+
+    #header .search:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 20%;
+        top: -8px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #fff;
+        z-index: 11
+    }
+
+    #header .search fieldset.busca:after {
+        width: 13.333vw;
+        height: 5.333vw;
+        font-size: 5.333vw;
+        margin-top: -2.667vw
+    }
+
+    #header .search .fulltext-search-box {
+        height: 11.2vw;
+        padding: 0 16vw 0 4vw
+    }
+
+    #header .search .btn-buscar {
+        height: 11.2vw;
+        width: 13.333vw
+    }
+
+    #header .pitbar {
+        padding: 2.4vw 0
+    }
+
+    #header .pitbar .wrap {
+        font-size: 12px
+    }
+
+    #header .pitbar p {
+        font-size: 3.2vw
+    }
+
+    #header .burger {
+        padding: 10px 0;
+        display: block;
+        width: 38px;
+        float: left
+    }
+
+    #header .burger a {
+        display: block;
+        position: relative;
+        width: 38px;
+        height: 10.667vw
+    }
+
+    #header .burger a .fa {
+        position: absolute;
+        font-size: 7.467vw;
+        height: 7.467vw;
+        top: 50%;
+        left: 50%;
+        margin-top: -3.733vw;
+        transform: translateX(-50%)
+    }
+
+    #header .burger a .icon-hamburguer {
+        width: 28px;
+        height: 18px;
+        position: absolute;
+        top: 15px;
+        left: 5px
+    }
+
+    #header .mobile-search {
+        display: none;
+        float: left;
+        padding: 5.333vw 0;
+        margin-left: 4vw
+    }
+
+    #header .mobile-search a {
+        display: block;
+        position: relative;
+        width: 10.667vw;
+        height: 10.667vw
+    }
+
+    #header .mobile-search a .fa {
+        position: absolute;
+        font-size: 5.867vw;
+        height: 5.867vw;
+        top: 50%;
+        left: 50%;
+        margin-top: -3.467vw;
+        transform: translateX(-50%)
+    }
+
+    .top-fixed #header {
+        height: 29.333vw
+    }
+
+    .top-fixed #header .header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        left: 0;
+        top: -21.333vw;
+        opacity: 0;
+        transition: all .3s ease 0s;
+        background: #0e542d
+    }
+
+    .show-top-fixed #header .header {
+        top: 0;
+        opacity: 1
+    }
+}

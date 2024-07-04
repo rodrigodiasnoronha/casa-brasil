@@ -1,0 +1,9 @@
+@import "variaveis-globais.css";
+
+.bg-verde {
+    background-color: var(--verde) !important;
+}
+
+.bg-verde-escuro {
+    background-color: var(--verde-escuro)
+}
